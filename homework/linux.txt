@@ -1,0 +1,37 @@
+vboxuser@Ubuntu:~/linux01/example_dir$ cat selected.txt commands.txt 
+176 processes.txt
+95:root        1099  0.1  1.1 120908 23040 ?        Ssl  21:12   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+108:vboxuser    1666  0.1  0.6 122168 12672 ?        S<sl 21:13   0:00 /usr/bin/pipewire
+109:vboxuser    1668  0.0  0.2 106404  5888 ?        Ssl  21:13   0:00 /usr/bin/pipewire -c filter-chain.conf
+110:vboxuser    1670  0.3  0.9 415472 18816 ?        S<sl 21:13   0:00 /usr/bin/wireplumber
+111:vboxuser    1671  0.0  0.5 118636 11264 ?        S<sl 21:13   0:00 /usr/bin/pipewire-pulse
+112:vboxuser    1675  0.1  0.5 325176 10112 ?        SLsl 21:13   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+113:vboxuser    1686  0.8  0.3  10684  6528 ?        Ss   21:13   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+115:vboxuser    1720  0.0  0.2 244336  6016 tty2     Ssl+ 21:13   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+124:vboxuser    1879 20.3 16.8 3389432 339236 ?      Rsl  21:13   0:39 /usr/bin/gnome-shell
+126:vboxuser    1897  0.0  0.2   9476  4992 ?        S    21:13   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+130:vboxuser    1993  0.2  1.3 2536132 26872 ?       Sl   21:13   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+131:vboxuser    2004  0.5  0.6 323776 12244 ?        Ssl  21:13   0:00 /usr/bin/ibus-daemon --panel disable
+148:vboxuser    2091  0.3  0.5  39000 12032 ?        Ss   21:13   0:00 /snap/snapd-desktop-integration/178/usr/bin/snapd-desktop-integration
+158:vboxuser    2285  0.5  1.5 429488 30988 ?        Sl   21:13   0:00 /snap/snapd-desktop-integration/178/usr/bin/snapd-desktop-integration
+167:vboxuser    2485  0.3  1.3 2536128 26856 ?       Sl   21:14   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+172:vboxuser    2688  0.4  1.2 499812 25476 ?        Sl   21:14   0:00 /usr/bin/update-notifier
+  253  cd example_dir/
+  254  ls
+  255  cat processes.txt 
+  256  ls
+  257  cat selected.txt 
+  258  ls
+  259  grep man
+  260  ls
+  261  grep -rn /bin processes.txt 
+  262  grep -rni /bin processes.txt 
+  263  grep -rn /bin processes.txt >>selected.txt 
+  264  cat selected.txt 
+  265  history
+  266  tail -n 13 history
+  267  history tail -n 13
+  268  history | tail -n 13
+  269  history | tail -n 16
+  270  history | tail -n 18
+  271  history | tail -n 19 >commands.txt
